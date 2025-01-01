@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace = "com.kirene.kirene"
+    namespace = "com.github.chinloyal.pusher_client"
     
     compileSdkVersion 29
 
