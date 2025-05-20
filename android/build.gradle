@@ -25,18 +25,18 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     namespace 'com.github.chinloyal.pusher_client'
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17  // Match your jvmTarget
-        targetCompatibility JavaVersion.VERSION_17  // Match your jvmTarget
+        sourceCompatibility JavaVersion.VERSION_1_8  // Match your jvmTarget
+        targetCompatibility JavaVersion.VERSION_1_8 // Match your jvmTarget
     }
 
     kotlinOptions {
-        jvmTarget = '17'  // Recommended choice for JDK 21
+        jvmTarget = JavaVersion.VERSION_1_8  // Recommended choice for JDK 21
     }
     defaultConfig {
         minSdkVersion 21
